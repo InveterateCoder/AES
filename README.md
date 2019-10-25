@@ -1,1 +1,1 @@
-# AES is a Windows Forms app that encrypts and decrypts files using AES (Advanced Encryption Standard) protocol
+# AES is a Windows Forms app that encrypts and decrypts files using AES (Advanced Encryption Standard) algorithm
