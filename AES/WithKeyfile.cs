@@ -125,6 +125,7 @@ namespace AES
                 }
                 byte CM = br.ReadByte();
                 byte PM = br.ReadByte();
+                br.Close();
                 KeyData.Key = key;
                 KeyData.IV = iv;
                 KeyData.CM = (System.Security.Cryptography.CipherMode)CM;
