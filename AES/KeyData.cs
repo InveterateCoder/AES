@@ -85,6 +85,7 @@ namespace AES
                     return;
                 }
                 KeyfileCheck(value);
+                _KeyfileWrite = value;
                 FileInfo fi = new FileInfo(_KeyfileWrite);
                 if (fi.Exists)
                     (fi.OpenWrite()).Close();
@@ -94,7 +95,6 @@ namespace AES
                     fs.Close();
                     fi.Delete();
                 }
-                _KeyfileWrite = value;
             }
         }
         private static void KeyfileCheck(string str)
